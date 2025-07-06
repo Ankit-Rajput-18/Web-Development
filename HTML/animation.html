@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation </title>
+    <style>
+.container
+{
+    background-color: antiquewhite;
+    height: 40vh;
+    width: 70vw;
+}
+.box
+{
+    background-color: rgb(255, 4, 9);
+    height: 4vh;
+    width: 7vw;
+    animation: ankit 3s ease-in-out 1s 1  backwards ;
+}
+@keyframes ankit {
+    from
+    {
+background-color: chartreuse;
+    }
+to 
+{
+    background-color: blue;
+    transform: translateX(1000px);
+}    
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+    
+</body>
+</html>

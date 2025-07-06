@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS which are selected</title>
+    <style>
+        /* for universal selector is 0 */
+
+        /* for element selector specificity is 1 */
+        /* for id selector specificity is 100 */
+        /* for inline selector specificity is 1000 */
+
+
+        h1 {
+            color: blue;
+        }
+
+        /* for class selector specificity is 10 */
+
+        .red {
+            color: red;
+        }
+
+        /* for class selector specificity is 10 */
+
+        .purple {
+            color: purple;
+        }
+
+        /* for class selector specificity is 10 */
+
+        .yellow {
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="red yellow purple"> which colour is selected</h1>
+</body>
+
+</html>

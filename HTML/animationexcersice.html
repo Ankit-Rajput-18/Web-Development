@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounce ball</title>
+    <style>
+        .container {
+            position: relative;
+            background-color: antiquewhite;
+            height: 70vh;
+            width: 90vw;
+        }
+
+        .box {
+            border-radius: 2000px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: rgb(255, 4, 9);
+            height: 8.5vh;
+            width: 7vw;
+            animation: ankit 15s linear infinite
+,            ankit2 1s ease-out infinite alternate;
+        }
+        
+
+        @keyframes ankit2 {
+            from {
+                bottom: 0;
+            }
+
+            to {
+                bottom: 100%;
+            }
+        }
+
+        @keyframes ankit {
+            from {
+                left: 0;
+            }
+
+            to {
+                left: 100%;
+
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>
