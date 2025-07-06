@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box
+        {
+            background-color: rgb(182, 227, 227);
+            color: rgb(0, 0, 0);
+            border: 2px solid black;
+            height: 20px;
+            width: 280px;
+            margin: 14px;
+            padding: 14px;
+        }
+        .subcontainer
+        {
+            background-color: rgb(23, 120, 23);
+            color: rgb(0, 0, 0);
+            border: 2px solid black;
+           
+            margin: 14px;
+            padding: 14px;
+        }
+        .container
+        {
+            background-color: rgb(220, 148, 61);
+            color: rgb(0, 0, 0);
+            border: 2px solid black;
+           
+            margin: 14px;
+            padding: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="subcontainer">
+
+            <div class="box"  >i am in box</div>
+
+        </section>
+        
+    </div>
+    <!-- <button id="btn"> click me</button> -->
+     <script> 
+      document.querySelector(".box").addEventListener("click" ,(e)=>{
+    alert("the click happens succesfully")
+   })
+   document.querySelector(".subcontainer").addEventListener("click" ,(e)=>{
+    alert("the click happens in subcontainer")
+   })
+    document.querySelector(".container").addEventListener("click" ,(e)=>{
+    alert("the click happens in container")
+   })
+   function color(){
+    let g = Math.ceil(0 + Math.random() * 255) 
+    let h = Math.ceil(0 + Math.random() * 255)
+
+    let k = Math.ceil(0 + Math.random() * 255)
+    return `rgb(${g} , ${h} ,${k})`
+
+   }
+//    setInterval(()=>{
+//     document.querySelector(".subcontainer").style.backgroundColor = color()
+//    },2000)
+   setTimeout(()=>{
+    document.querySelector(".subcontainer").style.backgroundColor = color()
+   },2000)
+     </script>
+</body>
+</html>
