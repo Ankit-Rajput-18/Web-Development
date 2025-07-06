@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS variables</title>
+    <style>
+        :root {
+            --ankit: Red;
+            --seccolor: rgb(64, 215, 19);
+        }
+        body{
+            background-color: antiquewhite;
+        }
+
+        /* variable kisi bhi name se bna skte hai aur usme value de skte aur color bhi fir usko alg 
+        alg jhgha use kr  skte hai color vala acolor mein aur value vala value mein use krna  hai */
+        .sty {
+            color: var(--seccolor);
+            background-color: var(--ankit);
+        }
+
+        p {
+            background-color: var(--seccolor);
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        /* nav{
+            background-color: var(--ankit); tb jb poore mein line chahiye
+
+        } */
+        ul li {
+            list-style: none;
+            display: inline;
+            padding :10px;
+            color: aqua;
+            background-color: var(--ankit);
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>home</li>
+            <li>about</li>
+            <li>information</li>
+            <li>questions</li>
+            <li>contact</li>
+        </ul>
+    </nav>
+</body>
+
+</html>

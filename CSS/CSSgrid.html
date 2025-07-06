@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>all about grid</title>
+    <style>
+        .container {
+            width: 70vw;
+            height: 40vh;
+            border: 3px solid black;
+            display: grid;
+            /* grid-template-columns: [pehla] 120px [doosra0] 100px ;
+            grid-template-rows: [ rowpehla] 100px [ rowdoosra] 100px  [rowteesra]100px;
+         */
+         /* fr unit hoti jisse hm row column ka size define kr skte hai */
+         /* grid-template-columns: 1fr 2fr 2fr;  */
+         /* repest use krte hai jb bshut ssre column ko size dena ho
+       min max mtlb maximum aur minimum kitna size dena chahte ho */
+         grid-template-columns: repeat(4, minmax(100px , 2fr));
+         gap: 50px 10px;
+         /* justify centre aur self use krne pe grid ke cell ke hisab se vo centre pe aata */
+         justify-items: center;
+         align-items: center;
+         /* justify content tb use krna hai jb 
+         container ka size item ke size se bda ho tb  tb 
+          vo use krne ke baad  grid container ke centre mein aa jayega */
+        }
+        .item {
+            height: 30px;
+            width: 50px;
+            border: 2px solid orange;
+        }
+
+        .item-4 {
+            grid-row: 1/2;
+            grid-column: 1/2;
+        }
+        .item-1 {
+            grid-row: 1/2;
+            grid-column: 1/2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item item-1">1</div>
+        <div class="item item-2">2</div>
+        <div class="item item-3">3</div>
+        <div class="item item-4">4</div>
+        <div class="item item-5">5</div>
+        <div class="item item-6">6</div>
+        <div class="item item-7">7</div>
+
+    </div>
+
+</body>
+
+</html>

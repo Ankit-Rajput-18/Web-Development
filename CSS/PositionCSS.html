@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position of boxes</title>
+    <style>
+        /*         
+        *{
+            padding: 0;
+            margin: 0;
+
+        } */
+        .box1 {
+            position: absolute;
+            top: 4px;
+            height: 133px;
+            width: 75vw;
+
+            background-color: aqua;
+            border: 2px solid blue;
+        }
+        /* z index ka use krte jb ek box ko doosre ke uppar 
+        lana ho jiska z index jyada hoga vo uppar aa jayega */
+
+        /* fixed : use krte hi vo ek jgha fix ho jata hai fir tm sbko move kroge toh bhi vo vhi pe rhega  */
+        /* sticky: ue krte hi vo chipak sa jayega jb tk upse rhoge toh nhi hoga kuc jb uske neeche scroll kroge toh vo vhi rhega baaki sare neeche chkle jayenge
+        isko hm log normal ksiis bhi site pe dekhte hai jb hm scroll krte hai toh ek box uppar hi reh jata hai baakii chlte rhte hai */
+        /* filter invert , tranform:translation aur perspective ko bhi parents class mein
+         use krne se jo child hoga vo parents ke relative hi move krega ye bhi relative aur absolute ki trh kam krti hai*/
+
+        .box2 {
+            /* position: relative ; */
+            top: -45px;
+            left: -45px;
+            height: 133px;
+            width: 75vw;
+            background-color: rgb(12, 226, 105);
+            border: 2px solid rgb(12, 15, 15);
+
+        }
+
+        .box3 {
+            height: 133px;
+            width: 75vw;
+
+            background-color: blanchedalmond;
+            border: 2px solid rgb(132, 15, 241);
+
+        }
+
+        .box4 {
+            height: 133px;
+            width: 75vw;
+
+            background-color: burlywood;
+            border: 2px solid rgb(237, 11, 173);
+
+        }
+
+        .bigbox {
+            position: absolute;
+            height: 651px;
+            width: 80vw;
+            border: 3px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bigbox">
+        <div class="box1 "></div>
+        <div class="box2 "></div>
+        <div class="box3 "></div>
+        <div class="box4 "></div>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRy some Selectors</title>
+    <style>
+        /* element selector */
+        div {
+            background-color: darkseagreen;
+            color: blueviolet;
+        }
+
+        /* class selector */
+        .blue {
+            background-color: blue;
+
+            color: pink
+        }
+
+        /* id selector  */
+        #green {
+            background-color: chartreuse;
+            color: crimson;
+        }
+
+        /* child selector */
+
+        div>p {
+            background-color: rgb(223, 119, 189);
+            color: black;
+        }
+
+        /* inside div and inside another tag in div then para comes */
+        /* div  p 
+        {
+            background-color: goldenrod;
+            color: rgb(10, 10, 10);
+        } */
+        /* universal selector */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* pseudo selector */
+        a:visited {
+            color: rgb(196, 22, 22);
+        }
+
+        a:link {
+            color: rgb(40, 248, 3);
+        }
+
+        a:active {
+            background-color: rgb(216, 239, 7);
+        }
+
+        a :hover {
+            background-color: rgb(238, 13, 186);
+        }
+    </style>
+</head>
+
+<body>
+    <a href="https://www.amazon.com">open the amazon app</a>
+    <a href="https://www.amazon2.com">open the amazon app</a>
+
+
+    <h1>some css are</h1>
+    <div class="blue">
+        ii am first second dive
+    </div>
+    <div id="green">
+        in second dive
+    </div>
+    <div>
+        in third dive
+    </div>
+    <div>
+        <p>
+            in prara in 4 dive
+        </p>
+
+    </div>
+
+
+
+</body>
+
+</html>

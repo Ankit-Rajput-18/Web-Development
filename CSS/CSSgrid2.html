@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>all about grid</title>
+    <style>
+        .container {
+            border: 3px solid black;
+            display: grid;
+            grid-template-areas: "nav nav nav"
+            "side side ankit";
+        }
+
+        .item {
+            height: 50px;
+            /* width: 50px; */
+            border: 2px solid orange;
+        }
+
+        /* .item-4 {
+            grid-area: ankit;
+        
+        } */
+        .item-1 {
+           grid-area: nav;
+        }
+        /* .item-3 {
+           grid-area: ankit;
+        }
+        .item-2{
+           grid-area: side;
+        } */
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item item-1">1</div>
+        <div class="item item-2">2</div>
+        <div class="item item-3">3</div>
+        <div class="item item-4">4</div>
+        <div class="item item-5">5</div>
+        <div class="item item-6">6</div>
+        <div class="item item-7">7</div>
+
+    </div>
+
+</body>
+
+</html>
